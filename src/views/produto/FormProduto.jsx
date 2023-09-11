@@ -36,38 +36,43 @@ export default function FormProduto () {
                                     label='Codigo do produto'> 
                                     <InputMask
                                         required
-                                      
                                     />
+                                    
                                    
                                 </Form.Input>
                                 </Form.Group>
-
-                                <Form.Group>
+                               
+                                <Form.Group widths='equal'>
                                              
                                 <Form.Input
                                     required
                                     fluid
                                     label='Descrição'
-                                    maxLength="600"
+                                    maxLength="100"
+                                    placeholder="Informe a descrição do produto"
                                 />
                                </Form.Group>
-                               <Form.Group>
+
+                               <Form.Group widths='equal'>
                                              
                                 <Form.Input
                                     fluid
                                     label='Valor unitario'
                                     maxLength="300"
+                                    
                                 />
 
                                 <Form.Input
                                     fluid
                                     label='Tempo de entrega minímo em minutos'
                                     maxLength="300"
+                                    placeholder="30"
                                 />
                                 <Form.Input
                                     fluid
                                     label='Tempo de entrega maxíma em minutos'
                                     maxLength="300"
+                                    placeholder="40"
                                 />
 
                             </Form.Group>
