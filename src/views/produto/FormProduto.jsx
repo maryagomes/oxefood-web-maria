@@ -48,7 +48,7 @@ export default function FormProduto () {
                                     required
                                     fluid
                                     label='Descrição'
-                                    maxLength="600"
+                                    maxLength="300"
                                 />
                                </Form.Group>
                                <Form.Group>
@@ -63,11 +63,13 @@ export default function FormProduto () {
                                     fluid
                                     label='Tempo de entrega minímo em minutos'
                                     maxLength="300"
+                                    placeholder="30"
                                 />
                                 <Form.Input
                                     fluid
                                     label='Tempo de entrega maxíma em minutos'
                                     maxLength="300"
+                                    placeholder="40"
                                 />
 
                             </Form.Group>
