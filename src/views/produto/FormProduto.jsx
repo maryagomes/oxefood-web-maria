@@ -36,13 +36,13 @@ export default function FormProduto () {
                                     label='Codigo do produto'> 
                                     <InputMask
                                         required
-                                      
                                     />
+                                    
                                    
                                 </Form.Input>
                                 </Form.Group>
-
-                                <Form.Group>
+                               
+                                <Form.Group widths='equal'>
                                              
                                 <Form.Input
                                     required
@@ -51,12 +51,14 @@ export default function FormProduto () {
                                     maxLength="300"
                                 />
                                </Form.Group>
-                               <Form.Group>
+
+                               <Form.Group widths='equal'>
                                              
                                 <Form.Input
                                     fluid
                                     label='Valor unitario'
                                     maxLength="300"
+                                    
                                 />
 
                                 <Form.Input
