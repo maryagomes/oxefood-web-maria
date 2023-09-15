@@ -1,7 +1,7 @@
 import React from "react";
 import InputMask from 'react-input-mask';
 import { Button, Container, Divider, Form, Icon } from 'semantic-ui-react';
-
+import MenuSistema from '../../MenuSistema';
 
 
 export default function FormEntregador() {
@@ -9,6 +9,7 @@ export default function FormEntregador() {
     return (
 
         <div>
+            <MenuSistema />
 
             <div style={{ marginTop: '3%' }}>
 
@@ -126,12 +127,18 @@ export default function FormEntregador() {
 
                             </Form.Group>
                             <Form.Group widths='equal'>
-
-                                <Form.Input
-                                    fluid
-                                    label='UF'
-                                    maxLength="100" />
+                                
+                                <Form.Input>
+                                  
+                                  <label for="cars">Uf:</label>
+                                  <select name="CIDADE" id="CIDADE">
+                                   <option value="JB">Jaboatão</option>
+                                        <option value="RE">Recie</option>
+                                          </select>
+                                          </Form.Input>
                             </Form.Group>
+                                 
+                            
 
 
                             <Form.Group widths='equal'>
