@@ -1,8 +1,8 @@
+import axios from "axios";
 import React, { useState } from "react";
 import InputMask from 'react-input-mask';
 import { Button, Container, Divider, Form, Icon } from 'semantic-ui-react';
 import MenuSistema from '../../MenuSistema';
-import axios from "axios";
 
 export default function FormCliente () {
 
@@ -22,7 +22,7 @@ export default function FormCliente () {
          foneFixo: foneFixo
     }
 
-    axios.post("http://localhost:8082/api/cliente", clienteRequest)
+    axios.post("http://localhost:8080/api/cliente", clienteRequest)
     .then((response) => {
          console.log('Cliente cadastrado com sucesso.')
     })
