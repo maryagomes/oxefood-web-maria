@@ -114,8 +114,8 @@ export default function ListCliente() {
                                                 circular
                                                 color='red'
                                                 title='Clique aqui para remover este cliente'
-                                                icon>
-                                                onClick={e => confirmaRemover(cliente.id)}
+                                                icon
+                                                onClick={e => confirmaRemover(cliente.id)}>
                                                 <Icon name='trash' />
                                             </Button>
 
